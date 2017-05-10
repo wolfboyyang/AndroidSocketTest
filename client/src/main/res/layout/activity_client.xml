@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="io.github.youi1987.androidsockettest.ClientActivity"
+    tools:layout_editor_absoluteY="73dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Server IP"
+        tools:layout_editor_absoluteY="95dp"
+        tools:layout_editor_absoluteX="164dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/server_ip" />
+
+    <EditText
+        android:id="@+id/server_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="10.0.2.15"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="149dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="149dp"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/connect_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Connect"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="235dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="49dp"
+        app:layout_constraintTop_toBottomOf="@+id/server_ip"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/send_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:text="Send"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="339dp"
+        app:layout_constraintStart_toStartOf="@+id/connect_button"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="56dp"
+        app:layout_constraintTop_toBottomOf="@+id/connect_button" />
+
+</android.support.constraint.ConstraintLayout>
